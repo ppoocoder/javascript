@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+
+    </script>
+  </head>
+  <body>
+    <input type="text" id="num1" />
+    <input type="text" id="num2" />
+    <input type="button"value="확인" id="checkbutton" />
+    <div >
+      id : <input type="text" id="id" />
+      pw : <input type="password" id="pw" >
+      <input type="button"value="확인" id="checkbtn" />
+    </div>
+
+
+    <script>
+      document.getElementById('num2');
+      var button = document.getElementById('checkbutton');
+      button.addEventListener('click', function(){
+        var num1 = document.getElementById('num1').value;
+        var num1 = document.getElementById('num1').value;
+        if(Number(num1) +Number(num2) >10) {
+          alert('10q보다 큼');
+        }else {
+          alert('10보다 작음')
+        }
+      });
+      // var person={};
+      // person["polytech"] = "12341234";
+      // console.log(person);
+      var checkbtn = document.getElementById('checkbtn');
+      checkbtn.addEventListener('click', function(){
+      var id = document.getElementById('id').value;
+      var pw = document.getElementById('pw').value;
+      //
+      // if (( id in person == false )||(person[id] != pw)){
+      //   alert('로그인실패- 아이디 혹은 패스워드가 맞지 않네요.');
+      // }else if (( id in person)&&(person[id] == pw) ){
+      //   alert('로그인 성공');
+      //
+      // }else {
+      //   alert('오류입니다. ');
+      // }
+
+      if (id =="polytech" && pw == "12341234"){
+        alert("로그인 성공");
+      }else{
+        alert("로그인실패!")
+      }
+
+
+
+
+
+    });
+
+
+
+
+    </script>
+
+  </body>
+</html>

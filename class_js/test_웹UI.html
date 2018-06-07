@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>웹UI시험.html</title>
+  </head>
+  <style media="screen">
+    h1{
+      text-align: center;
+      font-size: 50px;
+      color: blue;
+    }
+    h3.name{
+      font-family: arial;
+      font-style: italic;
+      color: green;
+    }
+    .id{
+      font-weight: 900;
+       color: blue;
+     }
+    .pw{
+      text-shadow: 7px -7px 5px black;
+    }
+    .email{letter-spacing: 0.8em; color: hotpink;}
+
+    .phone span{
+      background: lightblue;
+    }
+    .phone
+    .auth{
+      font-family: bold;
+      color: purple;
+    }
+    div {
+       text-align: center;
+       height: 200px;
+       vertical-align: bottom;
+
+    }
+    button{
+    margin-top: 100px;
+    }
+
+  </style>
+  <body>
+    <h1>회원가입</h1>
+    <form action="">
+      <h3 class="name">이름 <input type="text"></h3>
+      <h3 class="id">아이디 <input type="text"> <input type="button" name="confirm" value="중복확인"></h3>
+      <h3 class="pw">비밀번호 <input type="password"></h3>
+      <h3 class="pw">비밀번호 확인 <input type="password"></h3>
+      <h3 class="email">이메일 <input type="email"></h3>
+      <h3 class="gender">성별(남, 여 중에 한개만 선택가능) 남 <input type="radio" name="ch_gender" value="male">   여 <input type="radio" name="ch_gender" value="famale"></h3>
+      <h3 class="phone"><span>휴대폰(SKT, KT, LGT)</span>
+      <select>
+          <option value="skt">SKT</option>
+          <option value="kt">KT</option>
+          <option value="lgt">LGT</option>
+        </select>
+        <input type="tel" name="tel" maxlength="11" pattern="[0-9]{10}[0-9]?" title="'-'를 뺀 휴대전화 번호 10~11자리를 입력해주세요." value="휴대폰 번호(-제외)">  <input type="button" name="confirm" value="인증번호받기"/>
+        </h3>
+
+        <h3 class="auth">인증번호 <input type="text"> <input type="button" name="confirm" value="인증번호확인"></h3>
+      <div>
+        <button type="button">가입</button>
+        <button type="button">취소</button>
+      </div>
+    </form>
+  </body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <input id="id" type="text" name="id" >
+    <input id="pw"type="password" name="pw" value="">
+    <button class ="button" type="button" name="send">send</button>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"/>
+
+  </script>
+  <script>
+    var id = "polytech"
+    var password = "1234"
+      $(".button").click(function(){login($("#id").val(),$("#pw").val());});
+
+
+      var login = function(x,y){
+
+        if (x == id && y == password){
+          return alert('로그인 성공');
+        }else{
+          return alert('로그인 실팰');
+        }
+
+      };
+
+  </script>
+</html>

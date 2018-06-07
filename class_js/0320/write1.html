@@ -1,0 +1,39 @@
+<!-- 게시판 글 작성 형식 페이지 만들기 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>글을 작성하세요</title>
+      <style media="screen">
+        div {
+          text-align: center;
+          color: blue;
+          font-size: 80px;
+          display: block;
+        }
+
+        .text1 {
+            margin: 10px;
+            display: block;
+
+        }
+
+        textarea {
+          margin: 0px, 10px, 10px, 10px;
+          border:5px solid red;
+          display: block;
+
+        }
+      </style>
+
+  </head>
+  <body>
+    <div> 글쓰기 </div>
+    <input class= "text1" type="text" placeholder="제목">
+
+     <textarea name="name" rows="8" cols="80" placeholder="글을 입력하세요"></textarea>
+     <p>공개글 <input type="radio" name="public" value="" checked="checked">
+        비밀글 <input type="radio" name="private" value=""></p>
+      <input type="submit" name="" value="글쓰기"> <input type="button" name="cancle" value="취소">
+  </body>
+</html>

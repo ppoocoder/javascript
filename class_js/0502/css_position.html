@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" type="text/css" href="position.css">
+  </head>
+  <body>
+    <div class="one">
+    <div class="absolute" >absolute</div>
+    <div class="defalut"> </div>
+    <div class="fixed">고정(fixed)</div>
+  </div>
+  <input type="text" id="number" >
+  <input type="button" id="button" value="실행">
+  </body>
+  <script >
+    console.log("1+1",1+1);
+    console.log("10+10",10+10);
+    console.log("100-60 ",100+60);
+    console.log("7*7",7*7);
+    console.log("20/3",20/3);
+    console.log(10+10);
+
+
+    var clickButton = document.getElementById('button');
+    clickButton.addEventListener('click', function(){
+      var num = document.getElementById("number").value;
+      if(num>10){
+        console.log("10보다 큼");
+        alert("10보다 큼");
+      }
+      else{
+        console.log("10보다 작음");
+        alert("10보다 작음");
+      }
+    });
+  </script>
+
+</html>

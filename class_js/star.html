@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // for (var i=0,point ="*"; i<8;i++){
+      // console.log(point);
+      // point+="**";
+      // }
+
+      //
+      // for (var i=0,point ="***************"; i<8;i++){
+      // console.log(point);
+      // point = point.slice(0,-2);
+      // }
+      //
+      //
+      // //
+      // for (var i = 0; i<10;i++){
+      //      var star="";
+      //        for (var j =0; j<2*i+1;j++){
+      //           star += '*';
+      //        }
+      //          console.log(star);
+      //    }
+      // //
+      // //
+      //    // var star="";
+      //    // for(var s =0;s<15;s++){
+      //    //   star+="*";
+      //    // }
+      //    for (var i = 0; i<10;i++ ){
+      //
+      //    for (j =0; j<i*2;j++){
+      //              star = star.slice(0,-1);
+      //           }
+      //         console.log(star);
+      //       }
+      //
+      //
+
+//
+// for (var i =0; i<7;i++){
+//   var star="*";
+//   for (var j=0; j<i;j++){
+//     star +=star;
+//   }
+// console.log(star);
+// }
+//
+//
+// for(var a=1; a<10;a++){
+//
+//  for(var b=1;b<10;b++) {
+//   for(var c=1; c<10;c++){
+//     console.log(a+"*"+b+"*"+c+"="+a*b*c)
+//   }
+
+//
+// }
+//
+//
+// }
+
+
+
+for(var a=1;a<10;a++){
+  var b = 1;
+  while (b<10){
+     var c= 1;
+    while( c<10){
+
+        console.log(a+"*"+b+"*"+c+"="+a*b*c);
+        c++;
+    }
+    b++;
+  }
+}
+
+
+//
+// var arr1=[];
+// arr1.length=0;
+// console.log(arr1);
+//
+for (var i=1,arr1=[],arr2 =[0];i<101;i++){
+  arr1[i-1]=i;
+
+  if(arr2[i-1] <100){
+    arr2[i]=i*2;  }
+
+}
+console.log(arr1);
+console.log(arr2);
+
+for (var i=0,arr3=[];i<7;i++){
+    arr3[i]=`abc${i+1}`;
+
+}
+ console.log(arr3);
+
+ for (var i=1,arr4=[1];i<9;i++){
+     arr4[i]=arr4[i-1]+3;
+
+ }
+  console.log(arr4);
+
+
+// 좀더 연구하자!!!!***********************************   
+for(var i =1, arr5=[],arr6=[0];i<11;i++){
+  if(arr5[i] < 19 ||arr5[i] !=`empty`){
+  arr5[2*i-1]=2*(i);
+}
+  arr6[2*i-1]=2*(2*i-1);
+
+  arr6[2*i]=0;
+
+  // if(arr5[i-1] ==`empty`){
+  // arr5[i]=2*(i);
+  // }else{
+  // arr5[i]=`empty`;
+  // }
+  // arr6[2*i-1]=2*(2*i-1);
+  //
+  // arr6[2*i]=0;
+
+
+
+}  console.log(arr5);
+ console.log(arr6);
+
+
+
+//
+// for(var i =2; i<1000; i=i*i){
+//   console.log(i);
+// }
+//
+// for(var i=0; i<5;i++){
+//   for(j=3;j<i*2;j=j*1+2){
+//     console.log(j);
+//   }
+// }
+//
+// for(var i=10;i<22;i=i+3){
+//   for(j=i;j<i+2;j=j+3){
+//     console.log(j);
+//   }
+// }
+
+
+
+     //  for(var i=0;i<12;i++){
+     //    for(var j=0,bla="";j<5-i;i++){
+     //      bla+=" ";
+     //    }
+     //    for (var i = 0; i<10;i++){
+     //     var star="     ";
+     //
+     //       for (var j =0,star="*"; j<2*i+1;j++){
+     //          star += '**';
+     //
+     //       }
+     //
+     //       print(bla+star+star);
+     //   }
+     // }
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+
+  .style01 {
+    list-style-type:disc;
+  }
+
+  .style02 {
+    list-style-type:circle;
+  }
+
+  .style03 {
+    list-style-type:square;
+   }
+
+  .style04 {
+    list-style-type:none;
+   }
+
+  .style05 {
+    list-style-type:decimal;
+  }
+
+  .style06 {
+    list-style-type:upper-alpha;
+   }
+
+  .style07 {
+    list-style-image:url(head.gif);
+    list-style-position: outside;
+  }
+
+  .style08 {
+    list-style-type:upper-roman ;
+  }
+
+  .style09 {
+    list-style-type:lower-roman ;
+  }

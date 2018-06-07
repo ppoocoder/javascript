@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+
+  </body>
+  <script>
+
+// //문자열 함수(indexOF ) 사용 --1
+// for(var i=1; i<151; i++){
+//    var str = i.toString();
+//
+//   str.indexOf('3') != -1 ||str.indexOf('6') != -1||str.indexOf('9') != -1? console.log("짝") : console.log(str);
+//
+//   // if (str.indexOf('3') != -1 ||str.indexOf('6') != -1||str.indexOf('9') != -1) {
+//   //     console.log("짝");
+//   //   }else {
+//   //      console.log(str);
+//   //   }
+//   //
+//   }
+// 숫자, 문자열로 하는 방법 --2
+// for(var i =0,str_full =""; i<15;i++){
+//
+//    var str_10 = i.toString();
+//       for (var j=1;j<10;j++){
+//         if (i==0){
+//           if(j==3 ||j==6 ||j==9){
+//              str_full = j.toString()+'짝';
+//           }else{str_full = j.toString();}
+//
+//        }else if (i==3 ||i==6 ||i==9||i==13){
+//           if(j==3 ||j==6 ||j==9){
+//             str_full = i.toString()+j.toString()+'짝짝';
+//           }else{ str_full = i.toString()+j.toString()+'짝';}
+//
+//        }else{
+//            if(j==3 ||j==6 ||j==9){
+//              str_full = i.toString()+j.toString()+'짝'
+//            }else{str_full = i.toString()+j.toString();}
+//        }
+//          console.log(str_full);
+//       }
+//     }
+
+
+// 숮자로 하는 방법 --3
+for(var i =0; i<15;i++){
+
+    for (var j=1;j<10;j++){
+
+        if (i==0){
+            if(j==3 ||j==6 ||j==9){
+                str_full = j +'짝';
+            }else{str_full = j;}
+
+         }else if (i==3 ||i==6 ||i==9||i==13){
+            if(j==3 ||j==6 ||j==9){
+              str_full = (i*10+j)+'짝짝';
+            }else{ str_full = (i*10+j)+'짝';}
+         }else{
+           if(j==3 ||j==6 ||j==9){
+              str_full = (i*10+j)+'짝';
+           }else{str_full= i*10+j;}
+
+          }
+              console.log(str_full);
+        }
+}
+
+
+
+
+  </script>
+
+
+</html>

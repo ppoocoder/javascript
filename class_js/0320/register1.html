@@ -1,0 +1,63 @@
+<!-- 회원가입창 마들기  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>회원가입하세요</title>
+    <style media="screen">
+        .text {
+              font-size: 70px ;
+              color: green;
+            text-align:center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class ="text">회원가입</div>
+    <form>
+        <p> 아이디 :  <input type="text" name="" value=""></p>
+        <p> 비밀번호 : <input type="password" name="pw" value=""></p>
+        <p> 재확인 :  <input type="password" name="pw" value=""></p>
+        <p> 이름 : <input type="text" name="" value=""></p>
+        <p> 남자 <input type="radio" name="sex" value="male">
+            여자 <input type="radio" name="sex" value="female"></p>
+        <h3> 생년월일 </h3>
+      <div class = "date">
+      <p> 연도 :
+          <input type="text" name="date" value="" size="10s">
+          월
+            <select>
+            <option value="1월">1월</option>
+            <option value="2월">2월</option>
+            <option value="3월">3월</option>
+            <option value="4월">4월</option>
+            <option value="5월">5월</option>
+            <option value="6월">6월</option>
+            <option value="7월">7월</option>
+            <option value="8월">8월</option>
+            <option value="9월">9월</option>
+            <option value="10월">10월</option>
+            <option value="11월">11월</option>
+            <option value="12월">12월</option>
+          </select>
+
+           일 <input type="text" name="date" value=""> </p>
+        </div>
+          <form>
+            <p> 휴대폰번호:
+              <input type="tel" name="usertel" value="">
+              <input type="button" name="" value="인증">
+            </p>
+          </form>
+
+          <form>
+            <p> 인증번호 :
+              <input type="number" name="usertel" value="">
+              <input type="button" name="" value="인증">
+            </p>
+          </form>
+          <input type="submit" name="" value="가입하기">
+    </form>
+  </body>
+
+</html>

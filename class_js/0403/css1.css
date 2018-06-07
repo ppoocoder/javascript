@@ -1,0 +1,40 @@
+h1 {
+  font-size: 40px;
+  color: red;
+  font-style: italic;
+  text-align: center;
+}
+
+
+
+h2{
+  font-size: 30px;
+  color: blue;
+  text-align: left;
+  text-decoration: overline;
+}
+
+h3 {
+  font-size: 30px;
+  color: green;
+  text-align: right;
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 50px;
+  color: gray;
+  text-transform: capitalize;
+
+}
+h5 {
+  font-size: 25px;
+  color: gold;
+  text-transform: lowercase;
+}
+
+h6{
+  font-size: 35px;
+  color: #795548;
+  text-transform: uppercase;
+}
