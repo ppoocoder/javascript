@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <pre>
+      <script>
+          document.write();
+          document.write('hello');
+          document.write('world!');
+
+          document.writeln();
+          document.writeln('hello');
+          document.writeln('world!');
+
+          document.write('<h1> have a nice day! </h1>');
+
+          // 문서객체를 동적으로 생성해 문서 변경
+          var heading = document.createElement('h1');
+                  //html의 h1 요소를 생성한 후 heading에 할당
+          var text = document.createTextNode('have a nice day!');
+                    // 문자열을 담고 있는 텍스트 노드를 생성
+          heading.appendChild(text);
+          document.body.appendChild(heading);
+
+        // 텍스트 노드를 가지지 않는 문서 객체 생성
+           //  <속성에 값 할당> -- 1) 요소 노드 (createElement())이용 객체 생성 --2) 문서객체의 속성에 값을 할당 --3)요소노드를 body문서 객체에 연결
+        var image = document.createElement('img');
+          image.src ='../pic/pic4.png'; // ../
+          image.width =200;
+          image.height =350;
+          document.body.appendChild(image);
+
+          function changeImage() {
+            image.setAttribute('src', '../pic/pic6.png');
+          }
+
+
+
+        // innerHTML 속성 :: 문자열에 포함된 HTML 태그를 태그로 인식하여 문자열에 적용
+          window.onload =function () {
+            //html 문서의 로딩이 완료된 후 실행할 작업을 함수로 정의
+            var out = '<ol>';
+              out+='<li>봄</li>';
+              out+='<li>여름</li>';
+              out+='<li>가을</li>';
+              out+='<li>겨울</li>';
+              out+='</ol>';
+
+              document.body.innerHTML =out;
+              document.body.innerHTML  +='<h1> 우리나라 사계절</h1>';
+
+
+              document.body.textContent =out;
+              document.body.textContent  +='<h1> 우리나라 사계절</h1>';
+
+              // textContent  속성 ::  HTML 태그를 문자로 처리하는 속성
+
+          }
+
+
+
+      </script>
+
+    </pre>
+    <input type="button" onclick="changeImage()" value="이미지변경"/>
+
+  </body>
+</html>

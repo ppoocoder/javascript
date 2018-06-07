@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Onload</title>
+    <script>
+
+    //onload  문서가 로딩되고 난 후 실행할 작업을 나열할 때 사용
+    // window.onload에 정의된 함수는 문서 로딩 종료된 후 마지막으로 실행
+      window.onload =function() {
+              alert('페이지 로딩 종료');
+      }    //실행 순서 (1)
+ //NAVIGATOR 객체
+    var infoBrowser2;
+    infoBrowser2 ='브라우저 이름 :' +navigator.appName +'\n\n';
+    infoBrowser2 += '브라우저코드명' +navigator.appCodeName +'\n\n';
+    infoBrowser2 += '브라우저의 버전 :'+navigator.appVersion+'\n\n';
+    infoBrowser2 += '운영체제 환경 :'+navigator.platform;
+    infoBrowser2 += '자바 사용여부 :'+navigator.javaEnabled();
+        alert(infoBrowser2);
+    // LOCATION 객체
+      var infoBrowser;
+       infoBrowser = "현재 주소는  :" +location.href + "입니다. \n"; //location.href  실행하는 파일 위치
+       infoBrowser += "사용하고 있는 프로토콜은 :" + location.protocol +"입니다. \n";
+
+       alert(infoBrowser);
+
+        location.assign('http://hrdi.ekoreatech.ac.kr/');
+
+    </script>
+  </head>
+  <body>
+    <b>
+      다른사람들 평가 한다면 <br/>
+      그들을 사랑할 시간이 없다. <br/>
+            by 마더 테레사    <!-- 실행 순서 (2)-->
+
+
+
+    </b>
+  </body>
+</html>

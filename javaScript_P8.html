@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<script>
+
+    var empty = {
+    };
+    var car = {
+        name: 'car1',
+        model: 400,
+        color: 'black',
+
+        company: {
+            start: 1997,
+            logo: 'star'
+        },
+        run: function () {
+            alert('Car is running');
+        },
+        run2: function () {
+            alert(this.name + ' is runing');
+            //javascript에서 this를 생략 불가능
+            // 아래에서 똑같은 속성이름으로 재정의를 하였기때문에 사용이 안됨
+
+        },
+
+        run2: function (how) {
+            alert(this.name + ' is runing ' + how)
+        }
+        // 함수를 재정의를 함 ---  생성자 생성 못함
+
+    };
+
+    for (var i in car) {
+        alert(i + ': \t' + car[i]);
+    }
+
+
+</script>
+<body>
+
+</body>
+</html>

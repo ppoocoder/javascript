@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+     <script>
+    //  window.onlaod = function () {
+    //     var form = document.getElementById("form");
+    //     form.onsubmit = function() {
+    //         return false;
+    //     }; //  기본 onsubmit  메소드 실행 false 설정
+    //
+    //   };
+    function formCheck() {
+      var password = document.getElementById('password');
+      var check = document.getElementById('password-check')
+
+      if(password == check.value) {
+
+      }else {
+        alert('비밀번호를 다시입력해주세요');
+        return false;
+      };
+
+
+    };
+
+    window.onload = function(){
+      var button = document.getElementById('button');
+      var heading =  document.getElementById('heading');
+
+      function  whenClick1() {
+          heading.innerHTML ='행복한 날';
+      };
+      function whenClick2() {
+        heading.style.color ='blue';
+      };
+      button.addEventListener('click', whenClick1);
+
+      button.addEventListener('click', whenClick2);
+      button.removeEventListener('click', whenClick2)
+
+
+
+    };
+
+
+
+
+
+
+
+    </script>
+
+  <body>
+      <input type="button" id="button" value="이벤트">
+      <h5 id="heading">good day</h5>
+
+
+
+
+    <form id="form" action="http://www.naver.com" onsubmit ="return formCheck()">
+      <p>아이디 <input type="text"id="id"/></p>
+      <p> <input type="password" id="password"/></p>
+      <p> <input type="password" id="password-check"/></p>
+      <input type="submit" id="submit1"value="제출"/>
+    </form>
+
+
+
+  </body>
+</html>

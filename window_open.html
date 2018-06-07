@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>window 객체 실습 </title>
+
+    <script >
+    //window 객체  window([Url], [name] ,[attr (top , left, width, height/.... location  -- 창의 위치 크기 , 주소 표시줄 표시 여부 )] )
+
+    var windowTest = window.open('', '', 'top = 50, left=100, width=300,height=300' );
+    //open 메서드를 이용하여 창의 위치와 크기만을 지정
+    windowTest.document.write('새로 생성된 창');
+
+
+    // alert() , confirm()을 포함하여 자신의 위치와 모양을 변경할 수 있는 메서드를 제공
+
+    // moveby 메서드 -- 팝업창의 상대적인 위치로의 이동
+    var windowTest2;  // window창 (팝업)객체를 생성
+        function openWindow(){
+          windowTest2 = window.open('', '', 'top = 50, left=100, width=300,height=300' );
+          windowTest2.document.write('새로 생성된 창');
+        }
+        function moveWindow(){
+          windowTest2.moveBy(30,50);  //x,y 값으로 계속 이동
+          windowTest2.focus();       //초점을 팝업창에 맞춤
+        }
+
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+    <input type="button" value="창 생성" onclick="openWindow()"/>
+    <input type="button" value="창 이동" onclick="moveWindow()"/>
+    <input type="button" value="창 닫기" onclick="windowTest2.close()"/>
+  </body>
+</html>

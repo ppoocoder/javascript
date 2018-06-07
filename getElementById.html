@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <!-- getElementById -->
+    <h3 id="heading1">행복한 날</h3>
+    <h3 id="heading2">좋은 날</h3>
+    <h5>즐거운날</h5>
+
+    <input type="button" name="check" value="봄"/>
+    <input type="button" name="check" value="여름"/>
+
+
+
+    <script>
+      // getElementById => 하나의 문서 객체 가져오기
+
+      window.onload = function(){
+        var heading1 = document.getElementById('heading1');
+        var heading2 = document.getElementById('heading2');
+
+            heading1.innerHTML ='Good day';
+            heading2.style.color ='blue';
+
+      }
+      // 일치하는 여러개의 문서객체 가져오기
+      // getElementByName() :: 입력받은 문자열과 일치하는 name 속성을 가지는 문서 객체르 가져옴
+      window.onload = function (){
+        var check = document.getElementsByName('check');
+        document.write('가져온 문서 객체의 수 :' + check.length);
+        document.write('가져온 문서 객체의 수 :' + check[0].value);
+        document.write('가져온 문서 객체의 수 :' + check['봄']);
+        // 가져온 문서 객체의 수 :2가져온 문서 객체의 수 :undefined   undefined가 나온이유는???
+          var check = document.getElementsByName('check')[0].value;
+
+      }
+
+      window.onload = function (){
+        var headings = document.getElementsByTagName('h3');
+                      //배열 headings에 저장된 문서 객체들의 innerHTML 속성을 이용해 문서 객체의 문자열 변경
+        for(var i=0; i<headings.length; i++){
+            headings[i].innerHTML =(i+1)+'번째 문자열';
+        }
+          headings[0].style.color = 'blue'
+      }
+
+      window.onload= function (){
+        var headings = document.getElementsByTagName('h3');
+        for(var i in headings){
+          headings[i].innerHTML =(i+1) +'번째 문자열';
+
+        }
+        headings[0].style.color='blue';
+      }
+
+      // css 선택자로 문서 객체 가져오기
+       // querySelector() 선택자에 해당하는 첫번째 한개의 문서 객체를 가져옴
+       // querySelectorAll() 선택자에 해당하는 모든문서 객체를 배열로 가져옴 
+
+      window.onload = function(){
+        var heading1 = document.querySelector('#heading1');
+        var heading2 = document.querySelector('#heading2');
+
+            heading1.innerHTML ='Good day';
+            heading2.style.color ='blue';
+
+      }
+
+
+
+
+      //getElementByTagName() :: 입력받은 태그 이름과 일치하는 문서 객체를 가져옴
+
+
+
+
+    </script>
+
+
+
+
+  </body>
+</html>

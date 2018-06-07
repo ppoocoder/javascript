@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+    <script>
+       /* var plusTen = function () {
+            var num1 = prompt('input the number 1 ');
+            alert(Number(num1) + 10);
+        };
+        alert(typeof (plusTen));
+        alert(plusTen);
+        plusTen();
+
+
+        var add = plusTen; 
+        add();
+
+
+        // (1) 가변 인자 함수 
+        function add2(){
+            var output = '';
+            alert(typeof (arguments));
+            alert(arguments.length);
+
+            for(var i=0;i<arguments.length;i++) {
+                output += arguments[i]+' ';
+
+            }
+            return output;
+        }; 
+
+        var out = add(1, 2, 3, 4, 5);
+        alert(out);
+
+        function add3(){
+            var output = '';
+            var sum = 0;
+
+            for (var i = 0; i < arguments.length; i++) {
+                output += arguments[i] + '';
+                sum += arguments[i];
+
+            }
+            output = '입력된 매개변수' + output + '을 더한 값은 \n' + sum + '입니다.'
+            return output;
+
+        }
+        var out = add(1, 2, 3, 4, 5);
+        alert(out);
+
+         */ 
+
+     /*   function parameter() {
+            var out = '';
+            var length = arguments.length;
+            if (length == 0) {
+                out += 'Zero';
+            } else if (length == 1) {
+                out += 'out'
+            } else {
+                out +='Else'
+            }
+            return out;
+        }
+     
+        var output = parameter(1);
+        alert(output);
+   */
+        // 내부 함수 
+      
+        function circleSquare(r) {
+            function square(x) {
+                return x * x;
+            }
+            return 3.14 * square(r);
+        }
+
+        alert(circleSquare(3));
+
+
+        function square(width, height, hypotenuse) {
+            if (width * width + height * height == hypotenuse * hypotenuse) {
+                return true;
+        }else{
+            return false;
+        }
+        }
+    </script>
+
+
+
+<body>
+    
+
+
+
+</body>
+</html>
